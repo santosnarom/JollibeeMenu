@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jollibee Menu</string>
+    <string-array name="menu">
+        <item>Burgers</item>
+        <item>Desserts</item>
+        <item>Drinks</item>
+        <item>Meals</item>
+        <item>Pastas</item>
+        <item>Sides</item>
+    </string-array>
+</resources>
