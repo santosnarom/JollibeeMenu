@@ -1,5 +1,6 @@
 package com.app.jollibeemenu;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -23,6 +24,9 @@ public class DetailActivity extends AppCompatActivity {
 
         TextView name = (TextView) findViewById(R.id.name);
         name.setText(burger.getName());
+
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "Insaniburger.ttf");
+        name.setTypeface(typeface);
 
         TextView description = (TextView) findViewById(R.id.description);
         description.setText(burger.getDescription());
