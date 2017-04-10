@@ -18,10 +18,9 @@ public class MainActivity extends AppCompatActivity {
                 new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> listView, View view, int position, long id) {
-                        if(position == 0){
-                            Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
-                            startActivity(intent);
-                        }
+                        Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
+                        intent.putExtra("Position",(int) position);
+                        startActivity(intent);
                     }
                 };
         ListView listView = (ListView) findViewById(R.id.menuList);
